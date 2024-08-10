@@ -8,38 +8,38 @@
 </head>
 
 <body>
-	<form action="/submit-feedback" method="post">
+	<form method="post">
 		<label for="name">Name: </label>
-		<input type="text" id="name" name="name" placeholder="name" required><br><br>
+		<input type="text" id="name" name="name" required><br><br>
 
 		<lable for="email">Email: </lable>
-		<input type="text" id="email" name="email" placeholder="email" required><br><br>
+		<input type="text" id="email" name="email" required><br><br>
 
-		<label>Gender: </label><br>
-		<input type="radio" id="male" name="gender" value="male">
-		<label for="male">Male</label><br>
+		<label for="male">Male</label>
+		<input type="radio" id="male" name="gender" value="male" required>
 		
-		<input type="radio" id="female" name="gender" value="female">
-		<label for="female">Female</label><br><br>
+		<label for="female">Female</label>
+		<input type="radio" id="female" name="gender" value="female" required>
+		<br><br>
 
-		<label for="laptop">Laptop Brands: </label>
-		<select id="laptop" name="laptop">
-			<option>Apples</option>
-			<option>Asus</option>
-			<option>HP</option>
+		<label for="laptop">Laptop: </label>
+		<select id="laptop">
+			<option value="Apple">Apple</option>
+			<option value="Asus">Asus</option>
+			<option value="HP">HP</option>
 		</select><br><br>
 
 		<label for="age">Age: </label>
-		<input type="number" id="age" name="age" placeholder="Your Age" required><br><br>
+		<input type="number" id="age" name="age" required><br><br>
 
 		<lable for="dob">DOB: </lable>
-		<input type="date" id="dob" name="dob" placeholder="date of birth" required><br><br>
+		<input type="date" id="dob" name="dob" required><br><br>
 
 		<label for="password">Password: </label>
-		<input type="password" id="password" name="password" placeholder="your password" required><br><br>
+		<input type="password" id="password" name="password" required><br><br>
 
-		<label for="portfolio">URL: </label>
-		<input type="url" id="portfolio" name="url" placeholder="enter url"><br><br>
+		<label for="portfolio">Portfolio URL: </label>
+		<input type="url" id="portfolio" name="portfolio"><br><br>
 
 		<button type="submit">Submit</button>
 		
